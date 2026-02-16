@@ -103,9 +103,4 @@ El formulario usa **FormSubmit.co** para enviar emails a:
 
 Desarrollado para Serva Labari © 2024
 
-<div class="footer-bottom">
-            <p>&copy; 2024 Serva Labari. Todos los derechos reservados.</p>
-            <div class="social-links">
-                
-            </div>
-        </div>
+Prueba
