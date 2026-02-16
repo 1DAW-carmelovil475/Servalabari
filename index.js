@@ -1,42 +1,55 @@
 // =============================================
-// Serva Labari - index.js (VERSIÓN SIMPLIFICADA)
+// Serva Labari - index.js (VERSIÓN CORREGIDA)
 // JavaScript para la página principal
 // =============================================
 
-// Mobile menu toggle
-const menuToggle = document.getElementById('menuToggle');
-const nav = document.querySelector('nav');
+document.addEventListener('DOMContentLoaded', () => {
 
-if (menuToggle && nav) {
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-    });
-}
+    // =============================
+    // Mobile menu toggle (FIX)
+    // =============================
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.querySelector('nav');
 
-// Header scroll effect
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (header) {
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            document.body.classList.toggle('menu-open'); // 👈 CLAVE
+        });
     }
-});
 
-// Smooth scrolling SOLO para el botón "Conocer Más" que va a #sobre-nosotros
-const conocerMasBtn = document.querySelector('a[href="#sobre-nosotros"]');
-if (conocerMasBtn) {
-    conocerMasBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector('#sobre-nosotros');
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-}
+    // =============================
+    // Header scroll effect
+    // =============================
+    const header = document.querySelector('header');
+
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // =============================
+    // Smooth scrolling SOLO para #sobre-nosotros
+    // =============================
+    const conocerMasBtn = document.querySelector('a[href="#sobre-nosotros"]');
+
+    if (conocerMasBtn) {
+        conocerMasBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector('#sobre-nosotros');
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
+
+});
