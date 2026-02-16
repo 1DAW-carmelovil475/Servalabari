@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Grupo - Serva Labari</title>
+    <script>
+        // Forzar scroll a top INMEDIATAMENTE antes de que se renderice la página
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo.jpg" alt="Serva Labari Logo" class="logo-img">
+                <div class="logo">
+                    <span class="logo-text">SERVA LABARI</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="canciones.html">Canciones</a></li>
+                    <li><a href="componentes.html" class="active">El Grupo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <h1>Los Artistas</h1>
+        <p>Conoce a los talentosos músicos que dan vida a Serva Labari</p>
+    </div>
+
+    <div class="container">
+        <section class="team-intro">
+            <div class="section-header centered">
+                <span class="section-label">Nuestro Equipo</span>
+                <h2 class="section-title">Cuatro voces, una pasión</h2>
+                <p class="section-description">Serva Labari está formado por cuatro artistas apasionados que combinan su talento individual para crear la magia musical que nos caracteriza. Cada uno aporta su estilo único y su amor por la música flamenca.</p>
+            </div>
+        </section>
+
+        <!-- Miembros del Grupo -->
+        <section class="members-section">
+            <div class="members-grid">
+                <!-- Miembro 1: Luis -->
+                <div class="member-card">
+                    <div class="member-image-real">
+                        <img src="img/luis.jpg" alt="Luis Pino Antón">
+                    </div>
+                    <div class="member-info">
+                        <h3>Luis Pino Antón</h3>
+                        <p class="member-role">Voz Principal</p>
+                        <p class="member-bio">Voz principal del grupo que aporta emoción y potencia en cada interpretación.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 2: Pepe -->
+                <div class="member-card">
+                    <div class="member-image-real">
+                        <img src="img/pepe.jpg" alt="Pepe Montero Parrales">
+                    </div>
+                    <div class="member-info">
+                        <h3>Pepe Montero Parrales</h3>
+                        <p class="member-role">Voz Principal</p>
+                        <p class="member-bio">Voz principal que complementa y enriquece el sonido característico de Serva Labari.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 3: Antonio Bizcocho -->
+                <div class="member-card">
+                    <div class="member-image-real">
+                        <img src="img/bizcocho.jpg" alt="Antonio Bizcocho Parrado">
+                    </div>
+                    <div class="member-info">
+                        <h3>Antonio Bizcocho Parrado</h3>
+                        <p class="member-role">Guitarra Flamenca</p>
+                        <p class="member-bio">Guitarrista que aporta el acompañamiento musical y el compás flamenco del grupo.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 4: José Alberto -->
+                <div class="member-card">
+                    <div class="member-image-real">
+                        <img src="img/josealberto.jpg" alt="José Alberto Molino Rodríguez">
+                    </div>
+                    <div class="member-info">
+                        <h3>José Alberto Molino Rodríguez</h3>
+                        <p class="member-role">Cajón Flamenco</p>
+                        <p class="member-bio">Percusionista que marca el ritmo y el compás de cada interpretación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Foto del Grupo -->
+        <section class="group-photo-section">
+            <div class="group-photo-container">
+                <img src="https://primary.jwwb.nl/public/p/b/d/temp-cvwikisxhkieuagmhqhz/descarga1-high-na8j1b.jpg" alt="Serva Labari - Foto del Grupo" class="group-photo">
+                <div class="photo-caption">
+                    <h3>Serva Labari en Acción</h3>
+                    <p>Unidos por la música, unidos por la pasión flamenca</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trayectoria -->
+        <section class="timeline-section">
+            <div class="section-header centered">
+                <span class="section-label">Nuestra Historia</span>
+                <h2 class="section-title">Más de 20 años de trayectoria</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2002</div>
+                    <div class="timeline-content">
+                        <h3>Nace Serva Labari</h3>
+                        <p>Cuatro amigos sevillanos unidos por su pasión por el flamenco deciden formar el grupo Serva Labari, con el objetivo de llevar las sevillanas y rumbas a cada rincón de Andalucía.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h3>Primeras Grabaciones</h3>
+                        <p>El grupo entra al estudio para grabar sus primeros temas propios, marcando el inicio de una carrera discográfica que continúa hasta hoy.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2008</div>
+                    <div class="timeline-content">
+                        <h3>Récord Guinness en Londres</h3>
+                        <p>El grupo viajó a Londres para participar en el Récord Guinness de personas bailando por sevillanas, logrando reunir a más de 2.000 personas en un evento inolvidable. Este reconocimiento internacional ayudó a Serva Labari a ganar visibilidad y expandir su alcance a una audiencia más global.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>A Taste of Spain en Reino Unido</h3>
+                        <p>Serva Labari volvió a tierras británicas para representar a Andalucía en el evento "A Taste of Spain", donde cada comunidad autónoma española mostraba lo más representativo de su cultura.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Expansión Nacional</h3>
+                        <p>El grupo extiende sus actuaciones más allá de Andalucía, llevando su música a eventos por toda España.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3>Presente y Futuro</h3>
+                        <p>Con más de 500 eventos realizados y seguimos trabajando en nuevos temas, manteniendo viva la pasión por el flamenco y la música tradicional andaluza.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores del Grupo -->
+        <section class="values-section">
+            <div class="section-header centered">
+                <span class="section-label">Nuestros Valores</span>
+                <h2 class="section-title">Lo que nos define</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3>Pasión</h3>
+                    <p>Cada actuación es una oportunidad para compartir nuestro amor por el flamenco y crear momentos inolvidables.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3>Profesionalidad</h3>
+                    <p>Cumplimos con nuestros compromisos, llegamos puntuales y ofrecemos siempre el máximo nivel de calidad.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3>Autenticidad</h3>
+                    <p>Respetamos las raíces del flamenco mientras aportamos nuestro estilo personal y contemporáneo.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="handshake"></i>
+                    </div>
+                    <h3>Compromiso</h3>
+                    <p>Nos adaptamos a las necesidades de cada cliente para hacer realidad el evento que tienen en mente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>¿Quieres que animemos tu próximo evento?</h2>
+                <p>Ponte en contacto con nosotros y cuéntanos qué tipo de celebración tienes en mente</p>
+                <a href="contacto.html" class="btn btn-primary btn-large">Contáctanos Ahora</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SERVA LABARI</h3>
+                <p>Grupo sevillano de sevillanas y rumbas desde 2002. Llevando la pasión flamenca a cada rincón de Andalucía.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="canciones.html">Canciones</a></li>
+                    <li><a href="componentes.html">El Grupo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>servalabarifussion@gmail.com</p>
+                <p>Sevilla, Andalucía</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Serva Labari. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://open.spotify.com/intl-es/artist/2z6HFQ7pCB4y2WB0Y1MRTZ" aria-label="Spotify"><i data-lucide="headphones"></i></a>
+                <a href="https://www.instagram.com/servalabari.oficial/" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="https://www.facebook.com/servalabari.flamencofussion/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCWtxRpS4VTcZPI7o3u43CPQ" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="componentes.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

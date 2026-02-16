@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Serva Labari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo.jpg" alt="Serva Labari Logo" class="logo-img">
+                <div class="logo">
+                    <span class="logo-text">SERVA LABARI</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="canciones.html">Canciones</a></li>
+                    <li><a href="componentes.html">El Grupo</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <h1>Contacta con Nosotros</h1>
+        <p>Estamos listos para hacer de tu evento algo especial</p>
+    </div>
+
+    <div class="container">
+        <section class="contact-intro">
+            <div class="section-header centered">
+                <span class="section-label">Hablemos</span>
+                <h2 class="section-title">¿Listo para contratar a Serva Labari?</h2>
+                <p class="section-description">Rellena el formulario y nos pondremos en contacto contigo lo antes posible para organizar tu evento perfecto</p>
+            </div>
+        </section>
+
+        <div class="contact-layout">
+            <!-- Formulario de Contacto -->
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/camisetascarmelo@gmail.com" method="POST">
+                    <!-- Configuración de FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nueva consulta desde Serva Labari Web">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <!-- Honeypot anti-spam (campo oculto que solo los bots rellenan) -->
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="Nombre" required placeholder="Ej: Juan García Martínez">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="Email" required placeholder="tu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="Telefono" required placeholder="+34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipoEvento">Tipo de Evento *</label>
+                            <select id="tipoEvento" name="Tipo_de_Evento" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="Boda">Boda</option>
+                                <option value="Comunión">Comunión</option>
+                                <option value="Bautizo">Bautizo</option>
+                                <option value="Feria">Feria / Romería</option>
+                                <option value="Fiesta Popular">Fiesta Popular</option>
+                                <option value="Evento Corporativo">Evento Corporativo</option>
+                                <option value="Cumpleaños">Cumpleaños</option>
+                                <option value="Aniversario">Aniversario</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fecha">Fecha del Evento *</label>
+                            <input type="date" id="fecha" name="Fecha_del_Evento" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ubicacion">Ubicación del Evento *</label>
+                            <input type="text" id="ubicacion" name="Ubicacion" required placeholder="Ciudad, provincia">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="numInvitados">Número de Invitados (aprox.)</label>
+                            <input type="number" id="numInvitados" name="Numero_de_Invitados" placeholder="Ej: 100">
+                        </div>
+                        <div class="form-group">
+                            <label for="duracion">Duración Estimada</label>
+                            <select id="duracion" name="Duracion_Estimada">
+                                <option value="">Selecciona una opción</option>
+                                <option value="1-2 horas">1-2 horas</option>
+                                <option value="2-3 horas">2-3 horas</option>
+                                <option value="3-4 horas">3-4 horas</option>
+                                <option value="Más de 4 horas">Más de 4 horas</option>
+                                <option value="Todo el día">Todo el día</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Cuéntanos más sobre tu evento *</label>
+                        <textarea id="mensaje" name="Mensaje" required rows="6" placeholder="Danos más detalles sobre tu evento, preferencias musicales, horarios, o cualquier información que consideres importante..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="Acepta_Privacidad" required>
+                            <span>He leído y acepto la política de privacidad *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-submit">
+                        <span>Enviar Consulta</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <p class="form-note">* Campos obligatorios</p>
+                </form>
+            </div>
+
+            <!-- Información de Contacto -->
+            <div class="contact-info-sidebar">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>servalabarifussion@gmail.com</p>
+                    <a href="mailto:servalabarifussion@gmail.com" class="contact-link">Enviar email</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3>Ubicación</h3>
+                    <p>Sevilla, Andalucía<br>España</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="guitar"></i>
+                    </div>
+                    <h3>Disponibilidad</h3>
+                    <p>Actuamos en toda Andalucía y resto de España</p>
+                </div>
+
+                <div class="contact-card highlight">
+                    <h3>¿Por qué elegirnos?</h3>
+                    <ul class="features-list">
+                        <li>✓ Más de 20 años de experiencia</li>
+                        <li>✓ Repertorio amplio y variado</li>
+                        <li>✓ Música personalizada para tu evento</li>
+                        <li>✓ Profesionalidad garantizada</li>
+                        <li>✓ Equipo técnico propio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-header centered">
+                <span class="section-label">Preguntas Frecuentes</span>
+                <h2 class="section-title">¿Tienes dudas?</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">
+                        <span>¿Con cuánta antelación debo contratar?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Recomendamos contratar con al menos 1-2 meses de antelación para garantizar disponibilidad. Sin embargo, si tu evento es próximo, contáctanos y haremos lo posible por adaptarnos.</p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">
+                        <span>¿Pueden personalizar el repertorio?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>¡Por supuesto! Adaptamos nuestro repertorio a tus gustos y al tipo de evento. Podemos incluir canciones específicas que desees y crear una experiencia musical única.</p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">
+                        <span>¿Actuáis fuera de Sevilla?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Sí, actuamos en toda Andalucía y el resto de España. Nos desplazamos a cualquier ubicación para hacer de tu evento algo especial.</p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">
+                        <span>¿Qué incluye vuestro servicio?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <p>Incluimos equipo de sonido profesional, amplificación, micrófonos y todo lo necesario para ofrecer una actuación de calidad. Consulta nuestro rider técnico para más detalles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SERVA LABARI</h3>
+                <p>Grupo sevillano de sevillanas y rumbas desde 2002. Llevando la pasión flamenca a cada rincón de Andalucía.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="canciones.html">Canciones</a></li>
+                    <li><a href="componentes.html">El Grupo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>servalabarifussion@gmail.com</p>
+                <p>Sevilla, Andalucía</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Serva Labari. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://open.spotify.com/intl-es/artist/2z6HFQ7pCB4y2WB0Y1MRTZ" aria-label="Spotify"><i data-lucide="headphones"></i></a>
+                <a href="https://www.instagram.com/servalabari.oficial/" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="https://www.facebook.com/servalabari.flamencofussion/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCWtxRpS4VTcZPI7o3u43CPQ" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contacto.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

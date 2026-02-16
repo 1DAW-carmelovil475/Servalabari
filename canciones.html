@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones - Serva Labari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo.jpg" alt="Serva Labari Logo" class="logo-img">
+                <div class="logo">
+                    <span class="logo-text">SERVA LABARI</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="canciones.html" class="active">Canciones</a></li>
+                    <li><a href="componentes.html">El Grupo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <h1>Nuestro Repertorio</h1>
+        <p>Sevillanas y rumbas que harán vibrar tu evento</p>
+    </div>
+
+    <div class="container">
+        <section class="repertorio-intro">
+            <div class="section-header centered">
+                <span class="section-label">Música</span>
+                <h2 class="section-title">Un amplio catálogo para todos los gustos</h2>
+                <p class="section-description">Desde las sevillanas más tradicionales hasta las rumbas flamencas más modernas. Nuestro repertorio se adapta a cualquier tipo de evento y público.</p>
+            </div>
+        </section>
+
+        <!-- Categorías de Música -->
+        <section class="music-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="todas">Todas</button>
+                <button class="tab-btn" data-category="sevillanas">Sevillanas</button>
+                <button class="tab-btn" data-category="rumbas">Rumbas</button>
+            </div>
+
+            <div class="songs-grid" id="songsGrid">
+                <!-- Singles Recientes -->
+                <div class="song-card" data-category="rumbas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Que Forma de Bailar</h3>
+                        <p class="song-meta">Nuevo Single - Serva Labari</p>
+                        <p class="song-description">Nuestro último single que fusiona tradición flamenca con ritmos contemporáneos.</p>
+                    </div>
+                    <div class="song-badge">Nuevo</div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>De Tanto Quererte</h3>
+                        <p class="song-meta">Single - Serva Labari</p>
+                        <p class="song-description">Single por sevillanas lleno de pasión y sentimiento.</p>
+                    </div>
+                    <div class="song-badge">Popular</div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Sevilla y su Feria</h3>
+                        <p class="song-meta">Single - Serva Labari</p>
+                        <p class="song-description">Sevillanas dedicadas a la Feria de Abril hispalense que llenan de alegría las casetas.</p>
+                    </div>
+                    <div class="song-badge">Popular</div>
+                </div>
+
+                <!-- Del Disco "20 Años de Sevilla La Bella" -->
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>La Virgen Sigue Esperando</h3>
+                        <p class="song-meta">Sevillanas Rocieras - Serva Labari</p>
+                        <p class="song-description">Sevillanas propias dedicadas al Rocío, compuestas por José Alberto Molino.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="rumbas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Quince Años</h3>
+                        <p class="song-meta">Rumba - Serva Labari</p>
+                        <p class="song-description">Rumba original de Horacio Payseo, colaborador del grupo.</p>
+                    </div>
+                    <div class="song-badge">Original</div>
+                </div>
+
+                <!-- Versiones del Disco -->
+                <div class="song-card" data-category="rumbas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Uno por Uno</h3>
+                        <p class="song-meta">Versión Rumba - Manuel Carrasco</p>
+                        <p class="song-description">Versión rumbera del éxito de Manuel Carrasco con nuestro toque flamenco.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="rumbas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Por la Boca Vive el Pez</h3>
+                        <p class="song-meta">Versión Rumba - Fito & Fitipaldis</p>
+                        <p class="song-description">Adaptación flamenca del clásico de Fito & Fitipaldis.</p>
+                    </div>
+                </div>
+
+                <!-- Popurrí de Sevillanas Clásicas -->
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Como Cambia Sevilla</h3>
+                        <p class="song-meta">Sevillana - No Madeja Do</p>
+                        <p class="song-description">Clásica sevillana que celebra la evolución de Sevilla.</p>
+                    </div>
+                    <div class="song-badge">Clásica</div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Si Me Quieres, Dímelo</h3>
+                        <p class="song-meta">Sevillana - Salmarina</p>
+                        <p class="song-description">Sevillana romántica perfecta para bodas y celebraciones.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Pasa la Vida</h3>
+                        <p class="song-meta">Sevillana - Albahaca</p>
+                        <p class="song-description">Con la colaboración de Paco Lola y Pepe Vela de Albahaca.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Llegó la Feria</h3>
+                        <p class="song-meta">Sevillana - Cantores de Híspalis</p>
+                        <p class="song-description">Con la colaboración de Juani, Carlos, Diego y Alex.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Sevilla Espiritual</h3>
+                        <p class="song-meta">Sevillana - Los Marismeños</p>
+                        <p class="song-description">Sevillana que evoca la esencia espiritual de Sevilla.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>A Querer</h3>
+                        <p class="song-meta">Sevillana - Salmarina</p>
+                        <p class="song-description">Sevillana emotiva sobre el amor y el querer.</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>Sevilla de Noche</h3>
+                        <p class="song-meta">Sevillana - Los Marismeños</p>
+                        <p class="song-description">Con la colaboración de Pepe "El Marismeño".</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-category="sevillanas">
+                    <div class="song-icon">
+                        <i data-lucide="music"></i>
+                    </div>
+                    <div class="song-info">
+                        <h3>De Huelva</h3>
+                        <p class="song-meta">Sevillana - María de la Colina</p>
+                        <p class="song-description">Con la colaboración de María de la Colina.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personalización -->
+        <section class="personalizacion-section">
+            <div class="personalizacion-content">
+                <div class="personalizacion-text">
+                    <span class="section-label">Repertorio a Medida</span>
+                    <h2>¿Tienes alguna canción especial en mente?</h2>
+                    <p>Entendemos que cada evento es único. Por eso, ofrecemos la posibilidad de personalizar nuestro repertorio para incluir esas canciones especiales que hacen de tu celebración algo inolvidable.</p>
+                    <ul class="features-list">
+                        <li>✓ Adaptamos canciones a tu estilo preferido</li>
+                        <li>✓ Incluimos tus temas favoritos en el setlist</li>
+                        <li>✓ Creamos versiones especiales bajo petición</li>
+                        <li>✓ Repertorio flexible según el momento del evento</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primary">Solicitar Repertorio Personalizado</a>
+                </div>
+                <div class="personalizacion-image">
+                    <div class="image-placeholder">
+                        <span class="icon-large">
+                            <i data-lucide="music-4"></i>
+                        </span>
+                        <p>Música hecha<br>a tu medida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonials-section">
+            <div class="section-header centered">
+                <span class="section-label">Testimonios</span>
+                <h2 class="section-title">Lo que dicen de nuestra música</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Serva Labari hizo de nuestra boda un día mágico. Su música creó el ambiente perfecto y todos nuestros invitados bailaron sin parar. ¡Totalmente recomendables!"</p>
+                    <div class="testimonial-author">
+                        <strong>María & Carlos</strong>
+                        <span>Boda en Sevilla</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Profesionales, puntuales y con un repertorio espectacular. Amenizaron nuestra feria empresarial y fue todo un éxito. Volveremos a contar con ellos."</p>
+                    <div class="testimonial-author">
+                        <strong>Juan Rodríguez</strong>
+                        <span>Evento Corporativo</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"La música de Serva Labari puso el broche de oro a nuestro aniversario. Conocen perfectamente su oficio y transmiten una energía increíble. ¡Gracias!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Martín</strong>
+                        <span>Aniversario Familiar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SERVA LABARI</h3>
+                <p>Grupo sevillano de sevillanas y rumbas desde 2002. Llevando la pasión flamenca a cada rincón de Andalucía.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="canciones.html">Canciones</a></li>
+                    <li><a href="componentes.html">El Grupo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>servalabarifussion@gmail.com</p>
+                <p>Sevilla, Andalucía</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Serva Labari. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://open.spotify.com/intl-es/artist/2z6HFQ7pCB4y2WB0Y1MRTZ" aria-label="Spotify"><i data-lucide="headphones"></i></a>
+                <a href="https://www.instagram.com/servalabari.oficial/" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="https://www.facebook.com/servalabari.flamencofussion/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCWtxRpS4VTcZPI7o3u43CPQ" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="canciones.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
